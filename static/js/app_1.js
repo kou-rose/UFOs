@@ -1,6 +1,8 @@
 // import the data from data.js
 const tableData = data;
 
+console.log(tableData);
+
 // Reference the HTML table using d3
 var tbody = d3.select("tbody");
 
@@ -13,15 +15,15 @@ function buildTable(data) {
     data.forEach((dataRow) => {
 
         // append a row to the table body
-        let row = tbody.appen("tr");
+        let row = tbody.append("tr");
     
-    // loop through each field in the dataRow and
-    // add reach value as a table cell (td)
-    Object.values(dataRow).forEach((val) => {
-        let cell = row.appen("td");
-        cell.text(val);
-        });}
-    );}
+        // loop through each field in the dataRow and
+        // add reach value as a table cell (td)
+        Object.values(dataRow).forEach((val) => {
+            let cell = row.append("td");
+            cell.text(val);
+            });}
+        );}
 
 function handleClick() {
     // get datetime value from the filter
@@ -31,6 +33,7 @@ function handleClick() {
     // check to see if date was entered and
     // filter the data using that date
     if (date) {
+       console.log(date);
         filteredData = filteredData.filter(row => row.datetime === date);
     };
 
@@ -38,10 +41,11 @@ function handleClick() {
     // NOTE: if no date was entered, then filteredData
     // will just be the original tableData
     buildTable(filteredData);
-
-    // attach an event to listen for the form button
-    d3.selectAll("#filter-btn").on("click", handleClick);
-
-    // build the table when the page loads
-    buildTable(tableData);
 }
+
+
+// attach an event to listen for the form button
+d3.selectAll("#filter-btn").on("click", handleClick);
+
+// build the table when the page loads
+buildTable(tableData);
