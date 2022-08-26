@@ -1,8 +1,8 @@
 # JavaScript Dynamic Table Challenge
 ## Overview
-After being provided a selection of UFO data, we have been tasked with creating a web page and dynamic table that will respond to multiple filter options.
+After being provided a selection of UFO data, we have been tasked with creating a webpage and dynamic table that will respond to multiple filter options.
 
-With this aspect achieved, I will go over how the web page and its filters work, as well as some drawbacks and suggestions for refining the project in the future.
+With this aspect achieved, I will go over how the webpage and its filters work, as well as some drawbacks and suggestions for refining the project in the future.
 
 ## Results
 ![images/default_filter.png](images/default_filter.png)
@@ -13,7 +13,7 @@ This filter is not flexible in what it allows. The input needs to be exactly as 
 
 ![images/city_comparison.png](images/city_comparison.png)
 
-There are fiver filter options to choose from. They can be used together in any combination. As many filters as the user wishes to utilize can be used, one or five or somewhere between, and all will bring a result so long as each input exists in the data. Some examples have been given below.
+There are fiver filter options to choose from. They can be used together in any combination. As many filters as the user wishes to utilize can be used, one or five or somewhere between, and all will bring a result so long as each combination exists in the data. Some examples have been given below.
 
 ![images/filtering.png](images/filtering.png)
 
@@ -22,7 +22,7 @@ There are a couple notes to give about the filter and filtering process. The fir
 Another detail to note is that the filtering results will display either by either pressing "enter" or clicking on the page, whether it is another filter option a random location.
 
 ## Summary
-The biggest drawback of this design is the lack of flexibility in the inputs that will enable a result. On top of that, we have nothing to inform the user that this is the case. If they capitalize words by default, they will think nothing they put in has results, and has no reason to think otherwise.
+The biggest drawback of this design is the lack of flexibility in the inputs that will give a result. On top of that, we have nothing to inform the user that this is the case. If they capitalize words out of habit, they might think nothing they put in has results, and will have no reason to think otherwise.
 
 I have several recommendations for the webpage going forward, the first would be to have a box over the filter that informs the visitor of the limitations of the filter and the data, and instructs the visitor on how the input boxes need to filled in order to see results. In addition to this, whenever the filter has nothing to return, I think it needs to inform the visitor of this, so there is no confusion on whether they mistyped something or if there are actually no results.
 
